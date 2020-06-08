@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    padding: 30px 0;
+    width: 100%;
+    font-size: 18px;
+    color: #666666;
+    background-color: #f4f4f4;
+}
+
+/* First section */
+
+#welcome  {
+    min-height: 500px;
+    margin-left: auto; margin-right: auto;
+    width: 90%;
+    background-color: #FFF;
+}
+
+#welcome .section-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#welcome .section-container .item {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+     background-color: #FFF;
+}
+#welcome .section-container  .item:nth-child(1),
+#welcome .section-container  .item:nth-child(4) {
+    background-color: #9a3334;
+    color: #FFF;
+}
+
+#welcome .container {
+  padding: 5% 10%;
+}
+
+#welcome h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+#welcome h2 {
+  color: #9a3334;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#welcome q {
+  font-size: 1.35rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#welcome .btn {
+  background-color: #9a3334;
+  color: #FFF;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 12px 47px;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+#welcome .btn:hover {
+  background-color: #EC4949;
+}
+
+#welcome .float-right {
+  float: right;
+}
+#welcome .align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+#welcome .hero {
+  padding: 5%;
+}
+#welcome .hero img {
+  margin-left: 30%;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%
+}
+ #welcome .hero p {
+   font-size: 80%;
+   font-weight: 300;
+ }
+#welcome .img-fluid  {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+ #welcome .grey-heading{
+   /* text-align: center; */
+    color: inherit;
+ }
+#welcome .flex-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#welcome .btn-center {
+  /* transform: translateX(-50%, -50%); */
+}
+
+#welcome .link{
+  color: #007bff;
+  text-decoration: none;
+}
