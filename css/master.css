@@ -5,6 +5,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 /* Global */
+:root {
+  --primary: #9a3334;
+}
 .main-container {
     padding: 30px 0;
     width: 100%;
@@ -19,7 +22,7 @@ body {
   background-color: #FFF;
 }
 .colored-heading {
-  color: #9a3334;
+  color: var(--primary);
   font-weight: 500;
   line-height: 1.2;
 }
@@ -29,7 +32,7 @@ body {
   height: 100%;
 }
 .btn {
-  background-color: #9a3334;
+  background-color: var(--primary);
   color: #FFF;
   border-radius: 0;
   text-transform: uppercase;
@@ -70,7 +73,7 @@ header .section-container .item {
 }
 header .section-container  .item:nth-child(1),
 header .section-container  .item:nth-child(4) {
-    background-color: #9a3334;
+    background-color: var(--primary);
     color: #FFF;
 }
 
