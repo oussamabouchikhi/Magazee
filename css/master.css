@@ -159,3 +159,70 @@ header .flex-center {
       width: 90%;
   }
 }
+
+/* Pricing section */
+#pricing {
+  min-height: 400px;
+  margin: 20px 0;
+}
+#pricing .section-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+#pricing .left {
+  display: flex;
+  flex-basis: 33.3333%;
+}
+
+#pricing .right {
+  padding: 35px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 66.6666%;
+}
+
+#pricing .plan {
+  border: 1px solid #009999;
+}
+
+#pricing .plan .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pricing .plan .header,
+#pricing .plan .btn {
+  background-color: #009999;
+  color: #FFF;
+  font-weight: 300;
+}
+
+#pricing .plan .header .plan-heading {
+  font-weight: 300;
+  margin-bottom: 0
+}
+
+#pricing .plan .body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px
+}
+#pricing .plan ul {
+  list-style: none;
+  padding: 25px 50px;
+}
+#pricing .plan ul li {
+  line-height: 2.4;
+}
+
+#pricing .plan .btn {
+font-weight: 400;
+}
+
+#pricing .plan .btn:hover {
+  background-color: #24D4D4;
+}
