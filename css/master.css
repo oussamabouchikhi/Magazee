@@ -21,6 +21,9 @@ body {
   margin-right: auto;
   background-color: #FFF;
 }
+.container {
+  padding: 20px auto;
+}
 .colored-heading {
   color: var(--primary);
   font-weight: 500;
@@ -40,7 +43,6 @@ body {
   font-size: 1.15rem;
   text-decoration: none;
 }
-
 .btn:hover {
   background-color: #EC4949;
 }
@@ -48,7 +50,16 @@ body {
   color: #007bff;
   text-decoration: none;
 }
-
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
 /* Header */
 
 header .section-container {
@@ -225,4 +236,103 @@ font-weight: 400;
 
 #pricing .plan .btn:hover {
   background-color: #24D4D4;
+}
+
+/* Application section */
+#application {
+  min-height: 400px;
+  margin: 20px 0;
+
+}
+#application .section-container {
+  background-color: inherit;
+}
+#application header {
+  background-color: var(--primary);
+  color: #FFF;
+}
+#application .form-container {
+  background-color: #FFF;
+  margin-top: -56px;
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+#application .form-container form {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#application .form-container form input,
+#application .form-container form select,
+#application .form-container form textarea {
+  border: 1px solid #CCC;
+  width: 100%;
+  color: #666;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+
+}
+.select-group {
+  display: inline-flex;
+  align-items: flex-start;
+}
+#application .form-container form select option {
+    padding: 12px 20px
+}
+#application .form-container form input[type="text"],
+#application .form-container form select {
+  display: flex;
+  height: 50px;
+  width: -webkit-fill-available;
+}
+#application .form-container form select {
+  height: 75px;
+}
+#application .form-container .left {
+  display: flex;
+justify-content: space-between;
+padding: 20px 50px;
+flex-direction: column;
+width: 50%;
+}
+#application .form-container .left,
+#application .form-container .right {
+  padding: 20px 50px;
+  flex-direction: column;
+  width: 50%;
+}
+#application .submit {
+   flex-grow: 1;
+   padding: 3% 7%;
+   justify-content: center;
+}
+#application .btn {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+padding: 12px 47px;
+font-size: 1.15rem;
+}
+#application footer {
+  background-color: #666;
+  color: #FFF;
+  padding: 10% 15%;
+  margin-top: -56px;
+  z-index: -1
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  font-size: 1rem;
+  text-align: center!important;
 }
