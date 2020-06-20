@@ -242,7 +242,6 @@ font-weight: 400;
 #application {
   min-height: 400px;
   margin: 20px 0;
-
 }
 #application .section-container {
   background-color: inherit;
@@ -265,14 +264,11 @@ font-weight: 400;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
 }
 #application .form-container form {
   padding: 68px;
-
   display: flex;
   flex-wrap: wrap;
-
 }
 #application .form-container form input,
 #application .form-container form select,
@@ -298,7 +294,6 @@ font-weight: 400;
 #application .form-container form select option {
     padding: 12px 20px;
     margin-right: 20px;
-
 }
 #application .form-container form input[type="text"],
 #application .form-container form select {
@@ -311,10 +306,9 @@ font-weight: 400;
 }
 #application .form-container .left {
   display: flex;
-justify-content: space-between;
-/* padding: 20px 50px; */
-flex-direction: column;
-width: 50%;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
 }
 #application .form-container .left,
 #application .form-container .right {
@@ -331,8 +325,8 @@ width: 50%;
   border: none;
   outline: none;
   text-transform: uppercase;
-padding: 12px 47px;
-font-size: 1.15rem;
+  padding: 12px 47px;
+  font-size: 1.15rem;
 }
 #application footer {
   max-height: 70px;
