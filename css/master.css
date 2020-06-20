@@ -9,7 +9,7 @@ body {
   --primary: #9a3334;
 }
 .main-container {
-    padding: 30px 0;
+    padding: 30px 0 0;
     width: 100%;
     font-size: 18px;
     color: #666666;
@@ -251,12 +251,15 @@ font-weight: 400;
   background-color: var(--primary);
   color: #FFF;
 }
+#application header .container {
+  padding: 5% 12.5%;
+}
 #application .form-container {
   background-color: #FFF;
   margin-top: -56px;
   position: relative;
   display: flex;
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
@@ -265,6 +268,8 @@ font-weight: 400;
 
 }
 #application .form-container form {
+  padding: 68px;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -273,40 +278,47 @@ font-weight: 400;
 #application .form-container form select,
 #application .form-container form textarea {
   border: 1px solid #CCC;
-  width: 100%;
   color: #666;
   font-size: 1.2rem;
   padding: 12px 20px;
   line-height: 1.5;
   border: 1px solid #ced4da;
-
 }
-.select-group {
-  display: inline-flex;
-  align-items: flex-start;
+#application .form-container form .select-group {
+  display: flex;
+  align-items: baseline;
+  padding: 15px 0;
+}
+#application .form-container form .select-group > input {
+  margin-right: 5px
+}
+#application .form-container form .select-group label:first-of-type {
+  margin-right: 100px
 }
 #application .form-container form select option {
-    padding: 12px 20px
+    padding: 12px 20px;
+    margin-right: 20px;
+
 }
 #application .form-container form input[type="text"],
 #application .form-container form select {
   display: flex;
-  height: 50px;
+  height: 30px;
   width: -webkit-fill-available;
 }
 #application .form-container form select {
-  height: 75px;
+  height: 50px;
 }
 #application .form-container .left {
   display: flex;
 justify-content: space-between;
-padding: 20px 50px;
+/* padding: 20px 50px; */
 flex-direction: column;
 width: 50%;
 }
 #application .form-container .left,
 #application .form-container .right {
-  padding: 20px 50px;
+  padding: 10px 20px;
   flex-direction: column;
   width: 50%;
 }
@@ -323,16 +335,46 @@ padding: 12px 47px;
 font-size: 1.15rem;
 }
 #application footer {
+  max-height: 70px;
   background-color: #666;
   color: #FFF;
+  text-align: left;
   padding: 10% 15%;
   margin-top: -56px;
   z-index: -1
 }
+#application footer .row {
+  justify-content: space-evenly;
+}
+#application footer .column {
+  flex-basis: 50%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+#application footer p,
+#application footer h4{
+  max-width: 400px;
+  text-align: left;
+  margin: 0
+}
+#application footer h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#application footer p {
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 18px;
+}
 
 /* Footer */
 footer {
-  padding: 20px;
+  padding: 10px;
   font-size: 1rem;
   text-align: center!important;
+}
+footer p {
+  line-height: 1.8;
+  font-weight: 300;
 }
