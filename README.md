@@ -6,6 +6,9 @@ HTML5 template design inspired from [Magazee](https://templatemo.com/live/templa
 - CSS3
 - VSCode
 
+## Screenshot
+![](screenshots/magazee.png)
+
 ## Contributing
 Pull requests are welcome feel free to ```fork``` this repo.
 
